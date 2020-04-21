@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <title>30 Days of Code - Day 28</title>
+  </head>
+  <body>
+    <header class="head" id="change">
+      <div class="container">
+        <div class="header-flex">
+          <div class="where-container">
+            <h1 class="where-text">Where in the world?</h1>
+          </div>
+
+          <div class="dark-container">
+            <a onclick="dark()" class="dark-link"href="javascript:;">Dark Mode</a>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <div class="something" id="beamer">
+      <div class="container">
+        <a href="index.html">
+          <button class="back-btn">&#xf060; &nbsp;&nbsp;Back</button>
+        </a>
+
+        <div class="flex">
+          <div class="img-container">
+            <img class="big" src="assets/germany.png" alt="Germany">
+          </div>
+
+          <div class="explain">
+            <p class="odogwu">Germany</p>
+
+            <div class="describe-container">
+              <div class="native-container">
+                <p class="native-bold">
+                  Native Name: <span class="native">Deutschland</span> <br>
+                  Population: <span class="native">81,770,900</span> <br>
+                  Region: <span class="native">Europe</span> <br>
+                  Sub Region: <span class="native">Eastern Europe</span> <br>
+                  Capital: <span class="native">Berlin</span>
+                </p>
+              </div>
+              <div class="domain-container">
+                <p class="native-bold">
+                  Top Level Domain: <span class="native">.de</span> <br>
+                  Currencies: <span class="native">Euro</span> <br>
+                  Languages: <span class="native">German, Sorbian, North Frisian</span>
+                </p>
+              </div>
+            </div>
+
+            <p class="native-bold space">
+              Border Countries:
+              <span class="border-buttons">
+                <button class="border">Denmark</button>
+                <button class="border">Poland</button>
+                <button class="border">Austria</button>
+                <button class="border">Switzerland</button>
+              </span>
+            </p>
+            <p class="native-bold small">Note: <span class="native">The above border buttons are inactive.</span></p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    function dark() {
+      let origin = document.getElementById('change');
+      let body = document.getElementById('body');
+      let beamer = document.getElementById('beamer')
+      if (origin.className === 'head') {
+        origin.className += ' dark';
+      } else {
+        origin.className = 'head';
+      }
+
+      if (beamer.className === 'something') {
+        beamer.className += ' dark';
+      } else {
+        beamer.className = 'something';
+      }
+    }
+    </script>
+  </body>
+</html>

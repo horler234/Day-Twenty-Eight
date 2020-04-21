@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <title>30 Days of Code - Day 28</title>
+  </head>
+  <body>
+    <header class="head" id="change">
+      <div class="container">
+        <div class="header-flex">
+          <div class="where-container">
+            <h1 class="where-text">Where in the world?</h1>
+          </div>
+
+          <div class="dark-container">
+            <a onclick="dark()" class="dark-link"href="javascript:;">Dark Mode</a>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <section class="sec" id="body">
+      <div class="container">
+        <div class="my-flex">
+          <div class="input-container">
+            <input type="text" onkeyup="search()" id="find" placeholder="&#xF002; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search for a country...">
+          </div>
+
+          <div class="dropDown">
+            <button class="drop-btn">Filter by Region &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+            <div class="dropDown-content">
+              <a class="filter" href="#">Africa</a>
+              <a class="filter" href="#">America</a>
+              <a class="filter" href="#">Asia</a>
+              <a class="filter" href="#">Europe</a>
+              <a class="filter" href="#">Oceania</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="countries">
+          <a href="germany.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/germany.png" alt="Germany">
+              <p class="name">Germany</p>
+              <p class="story">
+                Population: <span class="yeba">81,770,900</span> <br>
+                Region: <span class="yeba">Europe</span> <br>
+                Capital: <span class="yeba">Berlin</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="usa.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/usa.jpg" alt="USA">
+              <p class="name">United States of America</p>
+              <p class="story">
+                Population: <span class="yeba">323,947,000</span> <br>
+                Region: <span class="yeba">America</span> <br>
+                Capital: <span class="yeba">Washington, D.C.</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="brazil.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/brazil.jpg" alt="Brazil">
+              <p class="name">Brazil</p>
+              <p class="story">
+                Population: <span class="yeba">206,135,893</span> <br>
+                Region: <span class="yeba">America</span> <br>
+                Capital: <span class="yeba">Brasilia</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="iceland.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/iceland.jpg" alt="Iceland">
+              <p class="name">Iceland</p>
+              <p class="story">
+                Population: <span class="yeba">334,300</span> <br>
+                Region: <span class="yeba">Europe</span> <br>
+                Capital: <span class="yeba">Reykjavik</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="afghanistan.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/afghan.gif" alt="Afghanistan">
+              <p class="name">Afghanistan</p>
+              <p class="story">
+                Population: <span class="yeba">27,657,145</span> <br>
+                Region: <span class="yeba">Asia</span> <br>
+                Capital: <span class="yeba">Kabul</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="aland.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/island.png" alt="Aland Islands">
+              <p class="name">Aland Islands</p>
+              <p class="story">
+                Population: <span class="yeba">28,875</span> <br>
+                Region: <span class="yeba">Europe</span> <br>
+                Capital: <span class="yeba">Mariehamn</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="albania.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/albania.svg" alt="Albania">
+              <p class="name">Albania</p>
+              <p class="story">
+                Population: <span class="yeba">2,886,026</span> <br>
+                Region: <span class="yeba">Europe</span> <br>
+                Capital: <span class="yeba">Tirana</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="algeria.html" class="country-link">
+            <div class="germany">
+              <img class="flag" src="assets/algeria2.jpg" alt="Algeria">
+              <p class="name">Algeria</p>
+              <p class="story">
+                Population: <span class="yeba">40,400,000</span> <br>
+                Region: <span class="yeba">Africa</span> <br>
+                Capital: <span class="yeba">Algiers</span>
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <script src="code.js" charset="utf-8"></script>
+  </body>
+</html>
